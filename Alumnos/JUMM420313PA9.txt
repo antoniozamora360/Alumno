@@ -1,0 +1,1 @@
+Nombre: Antonio de Jesús| Apellido Paterno: Serrano| Apellido MaternoZamora| Fecha de Nacimiento: 20/07/1990 12:00:00 a. m.| Genero: 1Masculino| Fecha de Ingreso: 25/01/2020 12:00:00 a. m.| Activo: True| RFC: JUMM420313PA9

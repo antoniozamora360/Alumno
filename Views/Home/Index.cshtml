@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model AlumnoModel
+<div>
+    <form asp-controller="Home" asp-action="Index" method="post">
+        <div class="row">
+            <div class="col-sm-4 col-4">
+                <label asp-for="Nombre"></label>
+                <br />
+                <input class="form-control" asp-for="Nombre" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>
+            <div class="col-sm-4 col-4">
+                <label asp-for="Apellido_Paterno"></label>
+                <br />
+                <input class="form-control" asp-for="Apellido_Paterno" />
+                <span asp-validation-for="Apellido_Paterno" class="text-danger"></span>
+            </div>
+            <div class="col-sm-4 col-4">
+                <label asp-for="Apellido_Materno"></label>
+                <br />
+                <input class="form-control" asp-for="Apellido_Materno" />
+                <span asp-validation-for="Apellido_Materno" class="text-danger"></span>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-sm-4 col-4">
+                <label asp-for="Fecha_Nacimiento"></label>
+                <br />
+                <input class="form-control" asp-for="Fecha_Nacimiento" />
+                <span asp-validation-for="Fecha_Nacimiento" class="text-danger"></span>
+            </div>
+            <div class="col-sm-4 col-4">
+                <label asp-for="Genero"></label>
+                <br />
+                <select  class="form-control" asp-for="Genero" asp-items="@Model.Generos">
+                </select>
+                <span asp-validation-for="Genero" class="text-danger"></span>
+            </div>
+            <div class="col-sm-4 col-4">
+                <label asp-for="Fecha_Ingreso"></label>
+                <br />
+                <input class="form-control" asp-for="Fecha_Ingreso" />
+                <span asp-validation-for="Fecha_Ingreso" class="text-danger"></span>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-sm-4 col-4">
+                <label asp-for="Activo"></label>
+                <br />
+                <input asp-for="Activo" checked />
+            </div>
+            <div class="col-sm-8 col-8">
+                <label asp-for="RFC"></label>
+                <br />
+                <input class="form-control" asp-for="RFC" />
+                <span asp-validation-for="RFC" class="text-danger"></span>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-sm-12 col-12">
+                <button class="btn btn-success" type="submit">Registrar</button>
+            </div>
+        </div>
+        <br />
+    </form>
+</div>
